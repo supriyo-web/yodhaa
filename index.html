@@ -2,204 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024"> <!-- Set fixed width for mobile -->
     <title>Yodha - Army Robot Project</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .header {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
-        .header img {
-            width: 80px;
-            height: auto;
-        }
-        .header h1 {
-            margin: 10px 0;
-            font-size: 24px;
-        }
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .left, .right {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .left img, .right img {
-            width: 200px;
-            height: auto;
-        }
-        .left p, .right p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-        .features {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .features h2 {
-            font-size: 22px;
-        }
-        .features ul {
-            list-style-type: none;
             padding: 0;
+            margin: 0;
+            width: 1024px; /* Force desktop width */
+            margin: 0 auto; /* Center the layout */
         }
-        .features li {
-            font-size: 18px;
-            margin: 8px 0;
-        }
-        /* Comment Section */
-        .comment-section {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #eaeaea;
-            border-radius: 10px;
-        }
-        .comment-section h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        .comment-section textarea {
+        header img {
             width: 100%;
-            height: 100px;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+            height: auto;
         }
-        .comment-section button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #333;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        section {
+            padding: 20px;
         }
-        .comment-section button:hover {
-            background-color: #555;
+        ul {
+            list-style-type: square;
         }
-        .comments-display {
+        form {
             margin-top: 20px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
         }
-        .comment {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        .comment:last-child {
-            border-bottom: none;
-        }
-        /* Footer Section */
-        .footer {
+        footer {
             text-align: center;
-            margin-top: 40px;
             padding: 20px;
             background-color: #333;
             color: white;
-            font-size: 16px;
-        }
-        @media (max-width: 768px) {
-            .left img, .right img {
-                width: 150px;
-            }
-            .header h1 {
-                font-size: 20px;
-            }
-            .features li {
-                font-size: 16px;
-            }
-            .features h2 {
-                font-size: 20px;
-            }
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <img src="https://raw.githubusercontent.com/supriyo-web/yodhaa/main/WhatsApp%20Image%202024-10-19%20at%209.54.09%20AM.jpeg" alt="Yodha Header">
+    </header>
 
-    <!-- Header Section -->
-    <div class="header">
-        <img src="https://raw.githubusercontent.com/supriyo-web/yodhaa/main/WhatsApp%20Image%202024-10-19%20at%209.54.09%20AM.jpeg" alt="Yodha Logo">
-        <h1>Yodha - Army Robot Project</h1>
-    </div>
-
-    <!-- Content Section -->
-    <div class="content">
-        <!-- Left Section -->
-        <div class="left">
-            <img src="https://raw.githubusercontent.com/supriyo-web/yodhaa/main/WhatsApp%20Image%202024-10-19%20at%209.53.55%20AM.jpeg" alt="Sayak Ghosh Photo">
-            <p>Hi, I am Sayak Ghosh. I am making a project which is an army robot to help the Indian army. It's called "Yodha".</p>
+    <!-- Introduction Section -->
+    <section style="display: flex; flex-direction: row; justify-content: space-between; padding: 20px;">
+        <div>
+            <h2>I am Sayak Ghosh</h2>
+            <p>I am working on a project which is an army robot to help the Indian army. It's called "Yodha".</p>
         </div>
+        <img src="https://raw.githubusercontent.com/supriyo-web/yodhaa/main/WhatsApp%20Image%202024-10-19%20at%209.53.55%20AM.jpeg" alt="Sayak Ghosh" style="width: 200px; height: auto;">
+    </section>
 
-        <!-- Right Section -->
-        <div class="right">
-            <img src="https://raw.githubusercontent.com/supriyo-web/yodhaa/main/WhatsApp%20Image%202024-10-19%20at%209.53.54%20AM%20(1).jpeg" alt="Yodha Robot Photo 1">
-            <img src="https://raw.githubusercontent.com/supriyo-web/yodhaa/main/WhatsApp%20Image%202024-10-19%20at%209.53.54%20AM.jpeg" alt="Yodha Robot Photo 2">
-        </div>
-    </div>
-
-    <!-- Features Section -->
-    <div class="features">
-        <h2>Key Features of Yodha:</h2>
+    <!-- Project Description Section -->
+    <section>
+        <h2>About the Project</h2>
+        <p>The project is an army robot named Yodha, which is designed to assist the Indian army with various tasks. Below are some of its features:</p>
         <ul>
-            <li>1. Emotion Detection</li>
-            <li>2. Bluetooth Control</li>
-            <li>3. Auto Gun</li>
-            <li>4. Accident Detection</li>
-            <li>5. Medical Assistance</li>
-            <li>6. Person Tracking</li>
+            <li>Emotion Detection</li>
+            <li>Bluetooth Control</li>
+            <li>Auto Gun</li>
+            <li>Accident Detection</li>
+            <li>Medical Assistance</li>
+            <li>Person Tracking</li>
         </ul>
-    </div>
+    </section>
 
-    <!-- Comment Section -->
-    <div class="comment-section">
-        <h3>Leave a Comment:</h3>
-        <textarea id="comment-input" placeholder="Enter your comment..."></textarea><br>
-        <button onclick="submitComment()">Submit</button>
-    </div>
+    <!-- Comments Section -->
+    <section>
+        <h2>Comments</h2>
+        <form onsubmit="return handleCommentSubmit();">
+            <label for="comment">Leave a comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your thoughts here..."></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="comments-section">
+            <h3>User Comments</h3>
+            <p>No comments yet. Be the first to comment!</p>
+        </div>
+    </section>
 
-    <!-- Display Comments -->
-    <div class="comments-display" id="comments-display">
-        <h3>Comments:</h3>
-    </div>
-
-    <!-- Footer Section -->
-    <div class="footer">
-        Made by Supriyo - Web launched using GitHub
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>Made by Supriyo - Web launched using GitHub</p>
+    </footer>
 
     <script>
-        function submitComment() {
-            const commentInput = document.getElementById('comment-input').value;
-            const commentsDisplay = document.getElementById('comments-display');
+        // JavaScript to handle comment submission
+        function handleCommentSubmit() {
+            const commentInput = document.getElementById('comment').value;
+            const commentsSection = document.getElementById('comments-section');
 
-            if(commentInput) {
-                const newComment = document.createElement('div');
-                newComment.classList.add('comment');
+            if (commentInput) {
+                const newComment = document.createElement('p');
                 newComment.innerText = commentInput;
 
-                commentsDisplay.appendChild(newComment);
-                document.getElementById('comment-input').value = ''; // Clear input
+                // Append the new comment to the comments section
+                commentsSection.appendChild(newComment);
+                document.getElementById('comment').value = ''; // Clear input
             }
+
+            return false; // Prevent form submission
         }
     </script>
-
 </body>
 </html>
+
